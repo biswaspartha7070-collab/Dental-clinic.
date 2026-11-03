@@ -1,0 +1,1256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dental Care by Dr. Subhankar Chakraborty | Dentist in Krishnanagar</title>
+
+<meta name="description" content="Visit Dental Care by Dr. Subhankar Chakraborty in Krishnanagar, West Bengal. Professional dental care, teeth cleaning, cavity filling and oral healthcare.">
+
+<meta name="keywords" content="Dentist in Krishnanagar, Dental Clinic Krishnanagar, Dr Subhankar Chakraborty, Dental Care West Bengal">
+
+<meta name="theme-color" content="#ffffff">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+:root {
+    --primary: #123c50;
+    --secondary: #087f8c;
+    --accent: #20b7a5;
+    --light: #f2f9f9;
+    --dark: #102b38;
+    --text: #61737d;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--dark);
+    background: white;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* NAVBAR */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255,255,255,.96);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 2px 20px rgba(0,0,0,.04);
+}
+
+.navbar {
+    height: 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 13px;
+    background: var(--primary);
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 23px;
+}
+
+.logo-text strong {
+    display: block;
+    font-size: 17px;
+    color: var(--primary);
+}
+
+.logo-text span {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    font-size: 13px;
+    font-weight: 600;
+    color: #50636c;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.nav-btn {
+    background: var(--primary);
+    color: white !important;
+    padding: 13px 22px;
+    border-radius: 8px;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--primary);
+}
+
+/* HERO */
+
+.hero {
+    background:
+    radial-gradient(circle at 85% 20%, #d7f4ed 0%, transparent 35%),
+    linear-gradient(110deg,#f5fbfb,#eaf6f5);
+    padding: 90px 0;
+    position: relative;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.05fr .95fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    background: white;
+    padding: 10px 16px;
+    border-radius: 50px;
+    color: var(--secondary);
+    font-size: 12px;
+    font-weight: 700;
+    box-shadow: 0 5px 20px rgba(0,0,0,.04);
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(40px,5vw,64px);
+    line-height: 1.15;
+    color: var(--primary);
+    margin-bottom: 22px;
+}
+
+.hero h1 span {
+    color: var(--secondary);
+}
+
+.hero p {
+    color: var(--text);
+    line-height: 1.9;
+    font-size: 15px;
+    max-width: 520px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 13px;
+    transition: .3s;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--secondary);
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    border: 1px solid #c5d9d9;
+    color: var(--primary);
+    background: white;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 25px 60px rgba(18,60,80,.14);
+}
+
+.rating-card {
+    position: absolute;
+    bottom: 25px;
+    left: -25px;
+    background: white;
+    padding: 18px 24px;
+    border-radius: 14px;
+    box-shadow: 0 10px 40px rgba(0,0,0,.10);
+}
+
+.rating-card strong {
+    font-size: 27px;
+    color: var(--primary);
+}
+
+.stars {
+    color: #f5ae32;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.rating-card small {
+    color: var(--text);
+}
+
+/* TRUST */
+
+.trust {
+    padding: 30px 0;
+    background: var(--primary);
+    color: white;
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    gap: 20px;
+}
+
+.trust-item i {
+    color: #57ddc4;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.trust-item strong {
+    display: block;
+    font-size: 15px;
+}
+
+.trust-item span {
+    font-size: 11px;
+    opacity: .75;
+}
+
+/* GENERAL SECTIONS */
+
+section {
+    padding: 90px 0;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 50px;
+}
+
+.section-heading span {
+    color: var(--secondary);
+    font-weight: 800;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.section-heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(30px,4vw,43px);
+    color: var(--primary);
+    margin: 15px 0;
+}
+
+.section-heading p {
+    color: var(--text);
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+/* ABOUT */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 65px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: 410px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.about-content h2 {
+    font-family: 'Playfair Display',serif;
+    font-size: 38px;
+    color: var(--primary);
+    margin: 15px 0 20px;
+}
+
+.about-content p {
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+.check-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 17px 0;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.check-item i {
+    color: var(--accent);
+}
+
+/* SERVICES */
+
+.services {
+    background: var(--light);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 22px;
+}
+
+.service-card {
+    background: white;
+    padding: 32px 25px;
+    border-radius: 15px;
+    border: 1px solid #e9f0ef;
+    transition: .3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(18,60,80,.09);
+}
+
+.service-icon {
+    height: 55px;
+    width: 55px;
+    display: grid;
+    place-items: center;
+    background: #e5f7f3;
+    border-radius: 13px;
+    color: var(--secondary);
+    font-size: 23px;
+    margin-bottom: 22px;
+}
+
+.service-card h3 {
+    color: var(--primary);
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: var(--text);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* REVIEWS */
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 22px;
+}
+
+.review-card {
+    padding: 28px;
+    border: 1px solid #e8eeee;
+    border-radius: 15px;
+    background: white;
+}
+
+.review-stars {
+    color: #f4b333;
+    margin-bottom: 17px;
+}
+
+.review-card p {
+    color: #596c75;
+    font-size: 13px;
+    line-height: 1.9;
+    margin-bottom: 22px;
+}
+
+.review-card h4 {
+    color: var(--primary);
+    font-size: 14px;
+}
+
+.review-card small {
+    color: #91a0a6;
+}
+
+/* APPOINTMENT */
+
+.appointment {
+    background: var(--primary);
+    color: white;
+}
+
+.appointment-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.appointment h2 {
+    font-family: 'Playfair Display',serif;
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.appointment p {
+    color: #c5d9df;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.appointment-info {
+    margin-top: 30px;
+}
+
+.appointment-info div {
+    margin: 18px 0;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: 13px;
+}
+
+.appointment-info i {
+    color: #56ddc3;
+    font-size: 18px;
+}
+
+.booking-form {
+    background: white;
+    padding: 35px;
+    border-radius: 17px;
+}
+
+.booking-form h3 {
+    color: var(--primary);
+    font-size: 23px;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 17px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #dce7e7;
+    border-radius: 8px;
+    outline: none;
+    font-family: inherit;
+    font-size: 13px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--secondary);
+}
+
+.booking-form button {
+    width: 100%;
+    padding: 15px;
+    background: var(--secondary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* LOCATION */
+
+.location-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: center;
+}
+
+.location-content h2 {
+    font-family: 'Playfair Display',serif;
+    font-size: 35px;
+    color: var(--primary);
+    margin: 15px 0;
+}
+
+.location-content p {
+    color: var(--text);
+    line-height: 1.9;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.map {
+    height: 330px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* FOOTER */
+
+footer {
+    background: #0b2430;
+    color: white;
+    padding: 60px 0 25px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+footer h3 {
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+footer p, footer a {
+    color: #afc1c7;
+    font-size: 13px;
+    line-height: 2.2;
+    display: block;
+}
+
+.footer-bottom {
+    border-top: 1px solid #29414a;
+    padding-top: 22px;
+    text-align: center;
+    color: #90a7ae;
+    font-size: 11px;
+}
+
+/* FLOATING BUTTONS */
+
+.floating-call {
+    position: fixed;
+    bottom: 22px;
+    right: 22px;
+    z-index: 999;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: #16a085;
+    color: white;
+    font-size: 21px;
+    box-shadow: 0 5px 20px #16a08555;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:850px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 82px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 25px;
+        flex-direction: column;
+        align-items: flex-start;
+        box-shadow: 0 10px 20px #0001;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero-grid,
+    .about-grid,
+    .appointment-grid,
+    .location-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 65px 0;
+    }
+
+    .hero-image img {
+        height: 350px;
+    }
+
+    .rating-card {
+        left: 10px;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .review-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-grid {
+        gap: 35px;
+    }
+
+    .appointment-grid {
+        gap: 35px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:550px) {
+
+    .container {
+        width: 91%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-image img {
+        height: 280px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trust-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    section {
+        padding: 65px 0;
+    }
+
+    .booking-form {
+        padding: 23px;
+    }
+
+    .appointment h2 {
+        font-size: 34px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .logo-text strong {
+        font-size: 14px;
+    }
+}
+
+/* ANIMATION */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: .7s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container navbar">
+
+<a href="#" class="logo">
+<div class="logo-icon"><i class="fa-solid fa-tooth"></i></div>
+<div class="logo-text">
+<strong>Dental Care</strong>
+<span>DR. SUBHANKAR CHAKRABORTY</span>
+</div>
+</a>
+
+<nav class="nav-links" id="navLinks">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+<a href="#contact" class="nav-btn">Book Appointment</a>
+</nav>
+
+<div class="menu-btn" onclick="toggleMenu()">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+</div>
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+<div class="container hero-grid">
+
+<div class="hero-content reveal">
+
+<div class="tag">
+<i class="fa-solid fa-shield-heart"></i>
+YOUR SMILE, OUR PRIORITY
+</div>
+
+<h1>
+A Healthy Smile
+Begins With
+<span>Expert Care.</span>
+</h1>
+
+<p>
+Welcome to Dental Care by Dr. Subhankar Chakraborty. Experience professional dental care with a patient-first approach in the heart of Krishnanagar, West Bengal.
+</p>
+
+<div class="hero-buttons">
+<a href="#contact" class="btn btn-primary">
+<i class="fa-solid fa-calendar-check"></i>
+Book Appointment
+</a>
+
+<a href="tel:06294224693" class="btn btn-outline">
+<i class="fa-solid fa-phone"></i>
+Call Clinic
+</a>
+</div>
+
+</div>
+
+<div class="hero-image reveal">
+<img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=85" alt="Modern dental clinic interior">
+
+<div class="rating-card">
+<strong>4.9/5</strong>
+<div class="stars">★★★★★</div>
+<small>14 Google Reviews</small>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- TRUST -->
+
+<div class="trust">
+<div class="container trust-grid">
+
+<div class="trust-item">
+<i class="fa-solid fa-star"></i>
+<strong>4.9 Star Rating</strong>
+<span>Based on 14 Google Reviews</span>
+</div>
+
+<div class="trust-item">
+<i class="fa-solid fa-user-doctor"></i>
+<strong>Patient-Focused Care</strong>
+<span>Professional dental attention</span>
+</div>
+
+<div class="trust-item">
+<i class="fa-solid fa-location-dot"></i>
+<strong>Convenient Location</strong>
+<span>Krishnanagar, West Bengal</span>
+</div>
+
+</div>
+</div>
+
+<!-- ABOUT -->
+
+<section id="about">
+<div class="container about-grid">
+
+<div class="about-image reveal">
+<img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=900&q=85" alt="Dental care and treatment">
+</div>
+
+<div class="about-content reveal">
+
+<span class="tag">ABOUT OUR CLINIC</span>
+
+<h2>Care That Makes You Smile.</h2>
+
+<p>
+At Dental Care by Dr. Subhankar Chakraborty, we believe that good oral health is an essential part of overall well-being.
+</p>
+
+<p>
+Our focus is on providing attentive, comfortable and professional dental care while ensuring that every patient feels informed and confident throughout their visit.
+</p>
+
+<div class="check-item">
+<i class="fa-solid fa-circle-check"></i>
+Patient-focused dental care
+</div>
+
+<div class="check-item">
+<i class="fa-solid fa-circle-check"></i>
+Attention to oral hygiene
+</div>
+
+<div class="check-item">
+<i class="fa-solid fa-circle-check"></i>
+Friendly and attentive approach
+</div>
+
+<div class="check-item">
+<i class="fa-solid fa-circle-check"></i>
+Convenient clinic location
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+<div class="container">
+
+<div class="section-heading reveal">
+<span>OUR SERVICES</span>
+<h2>Comprehensive Dental Care</h2>
+<p>Explore dental care services designed to support your oral health and maintain a healthy smile.</p>
+</div>
+
+<div class="service-grid">
+
+<div class="service-card reveal">
+<div class="service-icon"><i class="fa-solid fa-tooth"></i></div>
+<h3>Dental Check-up</h3>
+<p>Routine dental examination to help assess your oral health and identify concerns.</p>
+</div>
+
+<div class="service-card reveal">
+<div class="service-icon"><i class="fa-solid fa-sparkles"></i></div>
+<h3>Teeth Cleaning</h3>
+<p>Professional dental cleaning to help maintain oral hygiene and healthy teeth.</p>
+</div>
+
+<div class="service-card reveal">
+<div class="service-icon"><i class="fa-solid fa-teeth"></i></div>
+<h3>Cavity Filling</h3>
+<p>Dental restoration services to address cavities and help restore damaged teeth.</p>
+</div>
+
+<div class="service-card reveal">
+<div class="service-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+<h3>Oral Healthcare</h3>
+<p>Dental care guidance and attention to support your overall oral health.</p>
+</div>
+
+<div class="service-card reveal">
+<div class="service-icon"><i class="fa-solid fa-user-doctor"></i></div>
+<h3>Dental Consultation</h3>
+<p>Discuss your dental concerns and understand suitable treatment options.</p>
+</div>
+
+<div class="service-card reveal">
+<div class="service-icon"><i class="fa-solid fa-shield-heart"></i></div>
+<h3>Preventive Care</h3>
+<p>Guidance on maintaining good oral hygiene and preventing dental problems.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- REVIEWS -->
+
+<section id="reviews">
+<div class="container">
+
+<div class="section-heading reveal">
+<span>PATIENT EXPERIENCES</span>
+<h2>What Patients Say</h2>
+<p>Feedback shared by patients who visited Dental Care by Dr. Subhankar Chakraborty.</p>
+</div>
+
+<div class="review-grid">
+
+<div class="review-card reveal">
+<div class="review-stars">★★★★★</div>
+<p>
+"Dr. Shubhankar was professional, gentle, and attentive throughout the visit. Outstanding service and a very positive experience."
+</p>
+<h4>Yash Trivedi</h4>
+<small>Google Review · 5 Stars</small>
+</div>
+
+<div class="review-card reveal">
+<div class="review-stars">★★★★★</div>
+<p>
+"I am extremely grateful for the care I received. He is extremely polite and humble, and always eager to serve his patients."
+</p>
+<h4>Sambuddha Sengupta</h4>
+<small>Google Review · 5 Stars</small>
+</div>
+
+<div class="review-card reveal">
+<div class="review-stars">★★★★★</div>
+<p>
+"Highly prestigious and well-mannered doctor. The facility maintains high standards of hygiene and cleanliness."
+</p>
+<h4>Stoic Vipra</h4>
+<small>Google Review · 5 Stars</small>
+</div>
+
+</div>
+
+<div style="text-align:center;margin-top:35px">
+<a href="https://www.google.com/maps/search/?api=1&query=Dental+Care+Dr+Subhankar+Chakraborty+Krishnanagar" target="_blank" class="btn btn-primary">
+<i class="fa-brands fa-google"></i>
+View Google Reviews
+</a>
+</div>
+
+</div>
+</section>
+
+<!-- APPOINTMENT -->
+
+<section class="appointment" id="contact">
+<div class="container appointment-grid">
+
+<div class="reveal">
+<span style="color:#58dfc9;font-size:12px;letter-spacing:3px;font-weight:700">
+GET IN TOUCH
+</span>
+
+<h2>Your Smile Deserves The Best Care.</h2>
+
+<p>
+Have a dental concern or need a consultation? Contact our clinic to enquire about an appointment.
+</p>
+
+<div class="appointment-info">
+
+<div>
+<i class="fa-solid fa-phone"></i>
+<a href="tel:06294224693">062942 24693</a>
+</div>
+
+<div>
+<i class="fa-solid fa-location-dot"></i>
+<span>Krishnanagar, West Bengal 741101</span>
+</div>
+
+<div>
+<i class="fa-solid fa-clock"></i>
+<span>Opening time listed: 10:30 AM Wednesday</span>
+</div>
+
+</div>
+</div>
+
+<div class="booking-form reveal">
+
+<h3>Request An Appointment</h3>
+
+<form id="appointmentForm">
+
+<div class="form-group">
+<label>Your Full Name</label>
+<input type="text" id="name" placeholder="Enter your name" required>
+</div>
+
+<div class="form-group">
+<label>Phone Number</label>
+<input type="tel" id="phone" placeholder="Enter your phone number" required>
+</div>
+
+<div class="form-group">
+<label>Preferred Date</label>
+<input type="date" id="date" required>
+</div>
+
+<div class="form-group">
+<label>Service Required</label>
+<select id="service" required>
+<option value="">Select a service</option>
+<option>Dental Check-up</option>
+<option>Teeth Cleaning</option>
+<option>Cavity Filling</option>
+<option>Dental Consultation</option>
+<option>Other</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Message (Optional)</label>
+<textarea id="message" rows="3" placeholder="Tell us about your concern"></textarea>
+</div>
+
+<button type="submit">
+<i class="fa-brands fa-whatsapp"></i>
+Request via WhatsApp
+</button>
+
+</form>
+</div>
+
+</div>
+</section>
+
+<!-- LOCATION -->
+
+<section id="location">
+<div class="container location-grid">
+
+<div class="location-content reveal">
+<span class="tag">FIND OUR CLINIC</span>
+
+<h2>Visit Us In Krishnanagar.</h2>
+
+<p>
+Dental Care by Dr. Subhankar Chakraborty
+</p>
+
+<p>
+CF3W+VG2 SM Pharmacy, Ananta Hari Mitra Road, Opposite Punjab National Bank, Krishnanagar, West Bengal 741101.
+</p>
+
+<a href="https://www.google.com/maps/search/?api=1&query=CF3W%2BVG2+SM+Pharmacy+Ananta+Hari+Mitra+Road+Krishnanagar+West+Bengal+741101" target="_blank" class="btn btn-primary">
+<i class="fa-solid fa-location-arrow"></i>
+Get Directions
+</a>
+</div>
+
+<div class="map reveal">
+<iframe
+src="https://maps.google.com/maps?q=CF3W%2BVG2%20SM%20Pharmacy%2C%20Krishnanagar%2C%20West%20Bengal%20741101&t=&z=16&ie=UTF8&iwloc=&output=embed"
+loading="lazy"
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+</div>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+<h3><i class="fa-solid fa-tooth"></i> Dental Care</h3>
+<p>
+Professional dental care by Dr. Subhankar Chakraborty in Krishnanagar, West Bengal.
+</p>
+</div>
+
+<div>
+<h3>Quick Links</h3>
+<a href="#home">Home</a>
+<a href="#about">About Us</a>
+<a href="#services">Our Services</a>
+<a href="#reviews">Patient Reviews</a>
+</div>
+
+<div>
+<h3>Contact Information</h3>
+<a href="tel:06294224693">062942 24693</a>
+<p>Krishnanagar, West Bengal 741101</p>
+<a href="#location">Find Our Location</a>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+© <span id="year"></span> Dental Care by Dr. Subhankar Chakraborty. All Rights Reserved.
+</div>
+
+</div>
+</footer>
+
+<a href="tel:06294224693" class="floating-call" aria-label="Call clinic">
+<i class="fa-solid fa-phone"></i>
+</a>
+
+<script>
+
+// MOBILE MENU
+
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+}
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+        document.getElementById("navLinks").classList.remove("active");
+    });
+});
+
+// APPOINTMENT FORM
+
+document.getElementById("appointmentForm").addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const date = document.getElementById("date").value;
+    const service = document.getElementById("service").value;
+    const message = document.getElementById("message").value.trim();
+
+    if (!name || !phone || !date || !service) {
+        alert("Please complete all required fields.");
+        return;
+    }
+
+    const text = `Hello, I would like to request a dental appointment.
+
+Name: ${name}
+Phone: ${phone}
+Preferred Date: ${date}
+Service: ${service}
+Message: ${message}
+
+Please let me know about availability.`;
+
+    const whatsappNumber = "916294224693";
+
+    const url = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(text);
+
+    window.open(url, "_blank");
+
+});
+
+// SCROLL ANIMATION
+
+const observer = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+
+}, { threshold: 0.12 });
+
+document.querySelectorAll(".reveal").forEach(el => {
+    observer.observe(el);
+});
+
+// CURRENT YEAR
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// MINIMUM APPOINTMENT DATE
+
+document.getElementById("date").min = new Date().toISOString().split("T")[0];
+
+</script>
+
+</body>
+</html>
